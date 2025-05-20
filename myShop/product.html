@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>商品詳細ページ</title>
+
+    <!-- ✅ 引入商品详情专用 CSS -->
+    <link rel="stylesheet" href="product-detail.css" />
+</head>
+
+<body>
+    <main>
+        <section class="product-detail container">
+            <div class="product-detail-wrapper">
+                <!-- 左侧：商品图片 -->
+                <div class="product-gallery">
+                    <img id="product-img" class="main-image" src="https://via.placeholder.com/400" alt="商品画像" />
+                    <div class="thumbnail-list">
+                        <img src="https://via.placeholder.com/80" alt="thumb1" />
+                        <img src="https://via.placeholder.com/80" alt="thumb2" />
+                        <img src="https://via.placeholder.com/80" alt="thumb3" />
+                    </div>
+                </div>
+
+                <!-- 右侧：商品信息 -->
+                <div class="product-info">
+                    <h1 id="product-name" class="product-title">上質なコットンシャツ（ユニセックス）</h1>
+                    <p class="brand">ブランド：マイブランド</p>
+                    <p id="product-price" class="price">¥4,980（税込）</p>
+                    <p class="point">ポイント：49pt（1%）</p>
+                    <p class="shipping">送料：全国一律無料</p>
+                    <p class="stock">在庫：○（在庫あり）</p>
+                    <p id="product-desc" class="desc">
+                        柔らかい肌触りで、オールシーズン快適に着用いただけます。デザインもシンプルで様々なシーンにぴったり。
+                    </p>
+
+                    <div class="button-group">
+                        <button class="btn primary" id="buy-now">今すぐ購入</button>
+                        <button class="btn secondary">カートに追加</button>
+                    </div>
+
+                    <div class="delivery-info">
+                        <h3>配送情報</h3>
+                        <ul>
+                            <li>発送目安：2〜3営業日以内</li>
+                            <li>宅配便：ヤマト運輸</li>
+                            <li>代引き：対応可</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 下方详情 -->
+        <section class="product-details-tab container">
+            <h2>商品仕様</h2>
+            <table>
+                <tr>
+                    <th>サイズ</th>
+                    <td>M / L / XL</td>
+                </tr>
+                <tr>
+                    <th>素材</th>
+                    <td>綿100%</td>
+                </tr>
+                <tr>
+                    <th>カラー</th>
+                    <td>白、黒、ベージュ</td>
+                </tr>
+                <tr>
+                    <th>原産国</th>
+                    <td>日本</td>
+                </tr>
+            </table>
+        </section>
+    </main>
+</body>
+
+</html>

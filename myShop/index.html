@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>マイショップ - 日本のオンラインストア</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">マイショップ</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" data-key="home">ホーム</a></li>
+                    <li><a href="#" data-key="shop">商品一覧</a></li>
+                    <li><a href="#" data-key="about">会社情報</a></li>
+                    <li><a href="#" data-key="contact">お問い合わせ</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <input type="text" placeholder="検索" class="search-input" />
+                <select id="lang-select" aria-label="言語選択">
+                    <option value="ja">日本語</option>
+                    <option value="en">English</option>
+                </select>
+                <div class="cart-icon" title="カート">🛒<span class="cart-count">0</span></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1 data-key="banner_title">期間限定セール開催中！</h1>
+            <p data-key="banner_desc">人気商品をお得にゲットしよう！</p>
+            <!-- 跳转商品详情页示例，商品id=1 -->
+            <button class="btn" id="shop-now-btn">今すぐ買う</button>
+        </section>
+
+        <section class="featured-products">
+            <h2 data-key="featured_title">おすすめ商品</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="商品A" />
+                    <h3>商品A</h3>
+                    <p class="price">¥3,000</p>
+                    <button class="btn buy-btn" data-product-id="1">カートに追加</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="商品B" />
+                    <h3>商品B</h3>
+                    <p class="price">¥4,500</p>
+                    <button class="btn buy-btn" data-product-id="2">カートに追加</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="商品C" />
+                    <h3>商品C</h3>
+                    <p class="price">¥2,000</p>
+                    <button class="btn buy-btn" data-product-id="3">カートに追加</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 マイショップ. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
