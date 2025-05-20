@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>多语言电商首页 | Multi-language E-commerce</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header>
+        <div class="container header-container">
+            <div class="logo">MyShop</div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#" data-key="home">ホーム / Home</a></li>
+                    <li><a href="#" data-key="shop">ショップ / Shop</a></li>
+                    <li><a href="#" data-key="about">会社情報 / About</a></li>
+                    <li><a href="#" data-key="contact">お問い合わせ / Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-right">
+                <input type="text" placeholder="検索 / Search" class="search-input" />
+                <select id="lang-select" aria-label="Language selector">
+                    <option value="ja">日本語</option>
+                    <option value="en">English</option>
+                </select>
+                <div class="cart-icon" title="カート / Cart">🛒<span class="cart-count">0</span></div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h1 data-key="banner_title">今だけセール開催中！ / Limited Time Sale!</h1>
+            <p data-key="banner_desc">最新の商品をお得にゲットしよう！ / Get the latest products at great prices!</p>
+            <button class="btn" data-key="shop_now_btn">今すぐ買う / Shop Now</button>
+        </section>
+
+        <section class="featured-products">
+            <h2 data-key="featured_title">おすすめ商品 / Featured Products</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Product 1" />
+                    <h3 data-key="product1_name">商品A / Product A</h3>
+                    <p class="price">¥3,000 / $30</p>
+                    <button class="btn" data-key="add_to_cart">カートに追加 / Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Product 2" />
+                    <h3 data-key="product2_name">商品B / Product B</h3>
+                    <p class="price">¥4,500 / $45</p>
+                    <button class="btn" data-key="add_to_cart">カートに追加 / Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/200" alt="Product 3" />
+                    <h3 data-key="product3_name">商品C / Product C</h3>
+                    <p class="price">¥2,000 / $20</p>
+                    <button class="btn" data-key="add_to_cart">カートに追加 / Add to Cart</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MyShop. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
